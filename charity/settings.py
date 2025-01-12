@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-y15!_^qi_-mgdv0-+#bh7j0xliv_7vbg^!tbv991$f7r=v8c=p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'joy-inspire.onrender.com]
 
 
 # Application definition
