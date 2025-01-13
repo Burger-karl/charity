@@ -13,7 +13,7 @@ def partner_form_view(request):
             return HttpResponse("Thank you for partnering with us!")
     else:
         form = PartnerForm()
-    return render(request, 'homepage.html', {'form': form})
+    return render(request, 'partner_form.html', {'form': form})
 
 # Endpoint for Volunteer Form Submission
 def volunteer_form_view(request):
@@ -24,4 +24,4 @@ def volunteer_form_view(request):
             return HttpResponse("Thank you for volunteering!")
     else:
         form = VolunteerForm()
-    return render(request, 'homepage.html', {'form': form})
+    return render(request, 'volunteer_form.html', {'form': form})
