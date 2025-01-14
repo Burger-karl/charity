@@ -447,18 +447,60 @@ h6 {
     z-index: 9999;
   }
 
-  .mobile-nav-active .navmenu {
+  /* .mobile-nav-active .navmenu {
     position: fixed;
     overflow: hidden;
     inset: 0;
     background: rgba(33, 37, 41, 0.8);
     transition: 0.3s;
+  } */
+
+  .mobile-nav-active .navmenu {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    background: rgba(33, 37, 41, 0.8);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    transition: 0.3s;
+  }
+  
+  /* .mobile-nav-active .navmenu>ul {
+    display: block;
+  } */
+
+  .mobile-nav-active .navmenu > ul {
+    display: block;
+    position: relative; /* Ensures it stays centered */
+    list-style: none;
+    background-color: var(--nav-mobile-background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Ensures items are aligned to the center */
   }
 
-  .mobile-nav-active .navmenu>ul {
-    display: block;
+  .mobile-nav-active .navmenu a,
+  .mobile-nav-active .navmenu a:focus {
+    color: var(--nav-dropdown-color);
+    padding: 10px 20px;
+    font-family: var(--nav-font);
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center; /* Centers the text */
+    display: inline-block; /* Keeps alignment within the menu */
+    margin: 5px 0; /* Adds spacing between menu items */
+    transition: 0.3s;
   }
+
 }
+
+/* Centering the mobile navbar */
+
+
+
+
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -1547,21 +1589,6 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .volunteer {
-  background-image: url("https://res.cloudinary.com/dykhctgak/image/upload/v1736616526/IMG-20250108-WA0064_qo5emr.jpg");
-  background-size: cover;
-  /* inset: 0;
-  position: relative;
-  z-index: 1; */
-
-  position: relative;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
 
 .contact .info-item+.info-item {
   margin-top: 40px;
